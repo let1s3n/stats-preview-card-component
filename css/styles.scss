@@ -45,7 +45,7 @@ body {
     padding:20px;
   }
   
-  .card__body--title{
+  .card__body__title{
     color:hsl(0, 0%, 100%);
     font-size: 1.5rem;
     font-weight: 700;
@@ -54,12 +54,12 @@ body {
     }
   }
 
-  .card__body--text{
+  .card__body__text{
     color:hsla(0, 0%, 100%, 0.3);
     font-size: 1rem;
   }
 
-  .card__body--social{
+  .card__body__social{
     display: flex;
     flex-direction:column;
     color:hsla(0, 0%, 100%, 0.3);
@@ -70,6 +70,9 @@ body {
       font-size: 1.5rem;
       font-weight: 700;
     }
+  }
+  .card__body__title--desktop,.card__body__text--desktop{
+    display:none;
   }
 }
 
@@ -93,13 +96,36 @@ body {
       display: flex;
       flex-direction:column;
       justify-content: center;
-
-      .card__body--social{
-        display: flex;
-        flex-direction:row;
+      
+      *{
+        text-align: start;
       }
       
-      
+      .card__body__social{
+        display: flex;
+        flex-direction:row;
+        padding:20px 0;
+        font-size:1.5rem;
+        p{
+          text-align: left;
+          padding-right:20px;
+          span{
+            padding:0;
+          }
+        }
+        span{
+          font-size:2rem;
+        }
+       
+      }
+      .card__body__title{
+        font-size:3rem;
+        
+      }
+      .card__body__text{
+        font-size:1.5rem;
+        margin-bottom:20px;
+      }
     }
     .card__header {
       border-top-left-radius: 0px;
@@ -109,22 +135,23 @@ body {
       width: 50%;
       background: $soft-violet url(../images/image-header-desktop.jpg) 0 0/cover no-repeat;
     }
+
+    .card__body__title--desktop,.card__body__text--desktop{
+      display:block;
+    }
+   
+    .card__body__title--mobile,.card__body__text--mobile{
+     display:none;
+   }
   }
-  
- 
-  
-  
+
 }
 
 @media only screen and (min-width: 1440px){
   .card{
-    width:1200px;
+    width:1368px;
     height: 70vh;
-
-    
   }
-
-  
 }
 
 

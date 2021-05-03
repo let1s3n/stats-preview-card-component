@@ -41,28 +41,31 @@ body {
   font-family: "Inter", sans-serif;
   padding: 20px;
 }
-.card__body .card__body--title {
+.card__body .card__body__title {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.card__body .card__body--title span {
+.card__body .card__body__title span {
   color: #aa5cdb;
 }
-.card__body .card__body--text {
+.card__body .card__body__text {
   color: rgba(255, 255, 255, 0.3);
   font-size: 1rem;
 }
-.card__body .card__body--social {
+.card__body .card__body__social {
   display: flex;
   flex-direction: column;
   color: rgba(255, 255, 255, 0.3);
   font-size: 1rem;
 }
-.card__body .card__body--social span {
+.card__body .card__body__social span {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
+}
+.card__body .card__body__title--desktop, .card__body .card__body__text--desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 480px) {
@@ -86,9 +89,31 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-  .card .card__body .card__body--social {
+  .card .card__body * {
+    text-align: start;
+  }
+  .card .card__body .card__body__social {
     display: flex;
     flex-direction: row;
+    padding: 20px 0;
+    font-size: 1.5rem;
+  }
+  .card .card__body .card__body__social p {
+    text-align: left;
+    padding-right: 20px;
+  }
+  .card .card__body .card__body__social p span {
+    padding: 0;
+  }
+  .card .card__body .card__body__social span {
+    font-size: 2rem;
+  }
+  .card .card__body .card__body__title {
+    font-size: 3rem;
+  }
+  .card .card__body .card__body__text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
   .card .card__header {
     border-top-left-radius: 0px;
@@ -98,10 +123,16 @@ body {
     width: 50%;
     background: #aa5cdb url(../images/image-header-desktop.jpg) 0 0/cover no-repeat;
   }
+  .card .card__body__title--desktop, .card .card__body__text--desktop {
+    display: block;
+  }
+  .card .card__body__title--mobile, .card .card__body__text--mobile {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .card {
-    width: 1200px;
+    width: 1368px;
     height: 70vh;
   }
 }
