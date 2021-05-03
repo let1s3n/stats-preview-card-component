@@ -78,17 +78,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75vw;
-  }
-
-  .card__body {
     margin: 0 auto;
   }
-  .card__body .card__body--social {
+  .card .card__body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card .card__body .card__body--social {
     display: flex;
     flex-direction: row;
   }
-
-  .card__header {
+  .card .card__header {
     border-top-left-radius: 0px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -100,6 +102,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .card {
     width: 1200px;
+    height: 70vh;
   }
 }
 
