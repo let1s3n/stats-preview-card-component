@@ -23,26 +23,26 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./ss-mobile.jpg)
+![](./ss-desktop.jpg)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/let1s3n/stats-preview-card-component](https://github.com/let1s3n/stats-preview-card-component)
+- Live Site URL: [https://let1s3n.github.io/stats-preview-card-component/](https://let1s3n.github.io/stats-preview-card-component/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
-- CSS Grid
 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@let1s3n](https://www.frontendmentor.io/profile/let1s3n)
 
